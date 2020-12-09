@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    primary:
+      driver-class-name: ${spring.datasource.driver-class-name}
+      jdbcUrl: jdbc:mysql://192.168.1.121:3307/mydb?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&failOverReadOnly=false&useSSL=false
+      username: root
+      password: root
+    replica:
+      driver-class-name: ${spring.datasource.driver-class-name}
+      jdbcUrl: jdbc:mysql://192.168.1.121:3308/mydb?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&failOverReadOnly=false&useSSL=false
+      username: root
+      password: root
