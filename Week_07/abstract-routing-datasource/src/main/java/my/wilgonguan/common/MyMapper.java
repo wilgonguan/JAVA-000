@@ -1,4 +1,4 @@
-package my.levi.common;
+package my.wilgonguan.common;
 
 import tk.mybatis.mapper.common.Mapper;
 import tk.mybatis.mapper.common.MySqlMapper;
